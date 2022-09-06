@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "foodDetails";
+}
+
+<h1>Order Details</h1>
+
+<p>
+    Name:@ViewBag.Name
+</p>
+<p>
+    Contact:@ViewBag.Contact
+</p>
+<p>
+    <ul>
+        @foreach (var item in ViewBag.FoodOrder)
+        { 
+        <li>
+            @item
+        </li>
+        }
+
+    </ul>
+</p>
+<p>
+    Food Type:@ViewBag.Option
+</p>
+

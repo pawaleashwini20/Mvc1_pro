@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewData["Title"] = "FoodMenu";
+}
+
+<h1>FoodMenu Details</h1>
+@using (Html.BeginForm())
+{
+<table class="table">
+    <tr>
+        <td>
+            @Html.Label("Enter Name:")
+        </td>
+        <td>
+            @Html.TextBox("fname")
+        </td>
+    </tr>
+    <tr>
+        <td>
+            @Html.Label("Enter Number:")
+        </td>
+        <td>
+            @Html.TextBox("contact")
+        </td>
+    </tr>
+    <tr>
+        <td>
+            @Html.Label("Select food order:")
+        </td>
+        <td>
+            <input type="checkbox" name="food" value="Pizza">Pizza
+            <input type="checkbox" name="food" value="Burger">Burger
+            <input type="checkbox" name="food" value="Coffee">Coffee
+            <input type="checkbox" name="food" value="Pasta">Pasta
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>select option</label>
+        </td>
+        <td>
+            @Html.DropDownList("option")
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+        </td>
+        <td>
+            <input type="Submit" value="submit">
+        </td>
+    </tr>
+</table>
+
+}
